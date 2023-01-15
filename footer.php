@@ -1,4 +1,5 @@
 <!-- Footer Start -->
+</div>
 <footer id="rs-footer" class="rs-footer style1 footer-home4-style">
     <div class="footer-top">
         <div class="container">
