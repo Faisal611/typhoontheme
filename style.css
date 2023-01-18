@@ -5,3 +5,9 @@ Text Domain: typhoontheme
 Author: Faisal Sheikh
 Author URI: https://wordpress.org/
 */
+.rs-inner-blog .blog-item {
+    margin-bottom: 50px;
+}
+a .next:last-child{
+    border-right: none;
+}

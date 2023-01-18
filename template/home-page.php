@@ -55,7 +55,7 @@ get_header();
                 <div class="col-lg-3 col-md-6 col-sm-6 padding-0">
                     <div class="services-item">
                         <div class="services-icon">
-                            <img class="dance_hover" src="assets/images/services/style6/icon-box/1.png" alt="Services">
+                            <img class="dance_hover" src="<?php echo get_template_directory_uri()?>'/assets/images/services/style6/icon-box/1.png'" alt="Services">
                         </div>
                         <div class="services-content">
                             <h3 class="title"><a href="services-style1.html">Financial planing</a></h3>

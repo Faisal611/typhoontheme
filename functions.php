@@ -1,4 +1,8 @@
 <?php
+//custom widget
+require_once ('custom-widget/recent-post-widget.php');
+
+
 if ( ! function_exists('typhoon_theme_setup')) {
     add_action('after_setup_theme','typhoon_theme_setup');
     function typhoon_theme_setup () {
@@ -27,6 +31,33 @@ if ( ! function_exists('typhoon_theme_setup')) {
 
     }
 }
+
+//register sidebar
+add_action('widgets_init','post_right_sidebar');
+    function post_right_sidebar () {
+       register_sidebar(array(
+          'name' => 'Right Sidebar',
+           'id' =>'right-sidebar',
+           'before_title' => '</h3 class="title">',
+           'after_title' => '</h3>'
+       ));
+    }
+
+//acf option
+add_action('acf/init','acf_options');
+    function acf_options () {
+        if (function_exists('acf_add_options_page')) {
+            acf_add_options_page(array(
+                'page_title'    => __('Theme Settings','else-blog'),
+                'menu_title'    => __('Theme Option','theme-blog'),
+                'menu_slug'     => 'theme-general-settings',
+                'capability'    => 'edit_posts',
+                'redirect'      => false
+            ));
+        }
+    }
+
+
 
 
 add_action('wp_enqueue_scripts','sheikh_enqueue_style');

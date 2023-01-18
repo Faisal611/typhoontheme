@@ -508,14 +508,13 @@ button:focus {
 .pagination-area {
   display: inline-block;
 }
-.pagination-area .nav-link {
+.pagination-area .nav-links {
   display: flex;
   align-items: center;
-  padding: 15px 10px 15px 8px;
   border-radius: 0;
   background: #bb0b0b;
 }
-.pagination-area .nav-link .page-number {
+.pagination-area .nav-links .page-numbers {
   padding: 2px 15px 0 20px;
   line-height: 12px;
   font-size: 18px;
@@ -526,9 +525,12 @@ button:focus {
   color: #eee;
   display: inline-block;
   vertical-align: top;
-  border-right: 1px solid #e6e6e6;
 }
-.pagination-area .nav-link .page-number.border-none {
+.page-numbers.current {
+  background: #222 !important;
+  padding: 20px !important;
+}
+.pagination-area .nav-links .page-numbers.border-none {
   border-right: unset;
 }
 .pagination-part {
