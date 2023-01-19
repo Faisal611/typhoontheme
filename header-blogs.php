@@ -84,7 +84,7 @@
                                     <nav class="rs-menu hidden-md">
                                         <?php
                                             wp_nav_menu(array(
-                                                'theme_location'=>'main-theme',
+                                                'theme_location'=>'main-menu',
                                                 'menu_class'=>'nav-menu'
                                             ));
                                         ?>
