@@ -1,4 +1,8 @@
 <?php
+
+// CPT-UI
+require_once ('cpt-ui/cpt-ui.php');
+
 //custom widget
 require_once ('custom-widget/recent-post-widget.php');
 require_once ('custom-widget/search-post-widget.php');

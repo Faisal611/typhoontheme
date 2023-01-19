@@ -13,9 +13,7 @@
 <div class="rs-inner-blog pt-100 pb-100 md-pt-70 md-pb-70">
     <div class="container custom">
         <div class="row">
-
             <div class="col-lg-4 col-md-12 order-last">
-
                 <div class="widget-area">
                     <?php dynamic_sidebar('right-sidebar'); ?>
                 </div>
