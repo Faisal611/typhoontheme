@@ -18,19 +18,6 @@
 
                 <div class="widget-area">
                     <?php dynamic_sidebar('right-sidebar'); ?>
-
-
-                    <div class="categories">
-                        <div class="widget-title">
-                            <h3 class="title">Categories</h3>
-                        </div>
-                        <ul>
-                            <li><a href="branding.html">Branding</a></li>
-                            <li><a href="digital-marketing.html">Digital Marketing</a></li>
-                            <li><a href="e-commerce.html">E-commerce</a></li>
-                            <li><a href="graphic-design.html">Graphic Design</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
             <div class="col-lg-8 pr-35 md-pr-15 md-mt-50">

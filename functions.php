@@ -2,6 +2,7 @@
 //custom widget
 require_once ('custom-widget/recent-post-widget.php');
 require_once ('custom-widget/search-post-widget.php');
+require_once ('custom-widget/category-post-widget.php');
 
 
 if ( ! function_exists('typhoon_theme_setup')) {

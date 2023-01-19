@@ -11,3 +11,6 @@ Author URI: https://wordpress.org/
 a .next:last-child{
     border-right: none;
 }
+.rs-inner-blog .widget-area .categories li {
+    border-top: 1px solid rgba(0, 0, 0, 0.06) !important;
+}
