@@ -2,7 +2,11 @@
 // remove hook
 remove_action('woocommerce_shop_loop_item_title','woocommerce_template_loop_product_title',10);
 remove_action('woocommerce_after_shop_loop_item_title','woocommerce_template_loop_price',10);
-
+// product image
+remove_action('woocommerce_before_shop_loop_item_title','woocommerce_template_loop_product_thumbnail',10);
+// product cart
+remove_action('woocommerce_after_shop_loop_item','woocommerce_template_loop_add_to_cart',10);
+// remove hook end
 
 
 
@@ -40,7 +44,33 @@ function woo_after_shop_loop_function() {
 <?php
 }
 
-// content-product.php
+// content-product.php product-image
+add_action('woocommerce_before_shop_loop_item','shop_image_before_link');
+function shop_image_before_link() {
+    ?>
+        <div class="image-product">
+            <a href="<?php the_permalink();?>"><?php the_post_thumbnail();?></a>
+            <div class="overley">
+                <?php
+                global $product;
+
+                echo apply_filters(
+                    'woocommerce_loop_add_to_cart_link', // WPCS: XSS ok.
+                    sprintf(
+                        '<a href="%s" data-quantity="%s"><i class="flaticon-shopping-bag"></i></a>',
+                        esc_url( $product->add_to_cart_url() ),
+                        esc_attr( isset( $args['quantity'] ) ? $args['quantity'] : 1 )
+                    ),
+                    $product,
+                    $args
+                );
+                ?>
+            </div>
+        </div>
+    <?php
+}
+
+// content-product.php product-title
 add_action('woocommerce_after_shop_loop_item','shop_page_product_title');
 function shop_page_product_title () {
     ?>
