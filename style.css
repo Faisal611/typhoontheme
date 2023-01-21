@@ -14,3 +14,6 @@ a .next:last-child{
 .rs-inner-blog .widget-area .categories li {
     border-top: 1px solid rgba(0, 0, 0, 0.06) !important;
 }
+.product-list {
+    padding-bottom: 70px;
+}
