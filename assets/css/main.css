@@ -7189,6 +7189,7 @@ body .search-modal .close:hover {
   position: absolute;
   top: 13px;
   right: 13px;
+  left: 300px !important;
 }
 .rs-shop-part .product-list .content-desc .loop-product-title {
   font-size: 18px;

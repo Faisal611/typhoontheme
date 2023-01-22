@@ -26,7 +26,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 ?>
 <div <?php wc_product_class( 'col-lg-4 col-md-6 mb-80 md-mb-40', $product ); ?>>
     <div class="product-list">
-    <?php
+	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.
 	 *
@@ -65,5 +65,5 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 */
 	do_action( 'woocommerce_after_shop_loop_item' );
 	?>
-</div>
+    </div>
 </div>
