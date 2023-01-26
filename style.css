@@ -17,3 +17,10 @@ a .next:last-child{
 .product-list {
     padding-bottom: 70px;
 }
+ ul li span {
+    font-weight: 700;
+    padding-right: 10px;
+}
+.rs-shop-part {
+    padding-top: 50px;
+}

@@ -35,7 +35,6 @@ function woocommerce_before_shop_loop() {
 add_action('woocommerce_before_shop_loop_item_title','woo_shop_page_functions');
 function woo_shop_page_functions () {
     ?>
-        <div class="product-list">
             <div class="image-product">
                 <a href="<?php the_permalink();?>"><?php the_post_thumbnail();?></a>
                 <div class="overley">
@@ -60,7 +59,6 @@ function woo_shop_page_functions () {
                 <h2 class="loop-product-title"><a href="<?php the_permalink();?>"><?php the_title()?></a></h2>
                 <span class="price"><?php global $product; echo $product->get_price_html()?></span>
             </div>
-        </div>
     <?php
 }
 

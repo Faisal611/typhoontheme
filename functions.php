@@ -5,6 +5,7 @@ require_once ('cpt-ui/cpt-ui.php');
 
 // woocommerce hook
 require_once ('hooked/shop-page-hooked.php');
+require_once('hooked/shop-single-page-hooked.php');
 
 //custom widget
 require_once ('custom-widget/recent-post-widget.php');

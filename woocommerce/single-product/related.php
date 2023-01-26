@@ -21,14 +21,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $related_products ) : ?>
 
-	<section class="related products">
+    <div class="rs-shop-part md-pb-75">
+    <div class="container">
 
 		<?php
 		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'woocommerce' ) );
 
 		if ( $heading ) :
 			?>
-			<h2><?php echo esc_html( $heading ); ?></h2>
+			<h4 class="title"><?php echo esc_html( $heading ); ?></h4>
 		<?php endif; ?>
 		
 		<?php woocommerce_product_loop_start(); ?>
@@ -47,7 +48,8 @@ if ( $related_products ) : ?>
 
 		<?php woocommerce_product_loop_end(); ?>
 
-	</section>
+    </div>
+    </div>
 	<?php
 endif;
 
