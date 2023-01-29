@@ -1,11 +1,13 @@
 <?php
 
 // CPT-UI
-require_once ('cpt-ui/cpt-ui.php');
+require_once ('cpt-ui.php');
 
 // woocommerce hook
 require_once ('hooked/shop-page-hooked.php');
 require_once('hooked/shop-single-page-hooked.php');
+require_once('hooked/shop_cart_page_hooked.php');
+require_once('hooked/shop_checkout_page_hooked.php');
 
 //custom widget
 require_once ('custom-widget/recent-post-widget.php');

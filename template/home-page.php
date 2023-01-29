@@ -29,7 +29,7 @@ get_header();
                         </div>
                         <ul class="slider-bottom">
                             <li>
-                                <a class="readon consultant orange-slide" href="<?php the_field('banner_slider_btn_link');?>"><?php the_field('banner_slider_btn');?></a>
+                                <a class="readon consultant orange-slide" href="<?php the_field('banner_slider_link');?>"><?php the_field('banner_slider_btn');?></a>
                             </li>
                             <li>
                                 <div class="rs-videos">

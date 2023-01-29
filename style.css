@@ -24,3 +24,15 @@ a .next:last-child{
 .rs-shop-part {
     padding-top: 50px;
 }
+
+.woocommerce .star-rating {
+     float: none;
+    margin-left: 140px;
+    margin-top: 15px;
+}
+.rs-cart .cart-wrap table.cart-table .product-remove a {
+    font-size: 22px;
+}
+a.add-btn:hover {
+    color: #fff;
+}
